@@ -1,0 +1,100 @@
+kakashi,67,88,5	script	kakashi	831,{	
+	
+	skill 190,5,3;
+	skill 662,5,3;
+	skill 481,5,3; // espirito ninja deve ser adionada alguma animação.
+	skill 541,5,3;
+	skill 179,5,3;
+	skill 181,5,3;	
+	skill 660,5,3;
+	skill 11,10,3; //skill em área teve seus rits reduzidos e área reduzida
+	skill 14,5,3;
+	skill 5,10,3;
+	skill 7,10,3; //pode ser adicionado um effect do personagem girar
+	skill 15,10,3;
+	skill 17,10,3;
+	skill 20,10,3;
+	skill 21,10,3; //não está levando a dex em consideração. arrumar
+	skill 27,4,3; // portal esta pedindo uma gema azul que deve ser retirada.
+	skill 28,10,3;
+	skill 29,10,3;
+	skill 541,6,3;
+	skill 749,1,3;
+	skill 157,1,3;
+	skill 16,10,3;
+	skill 3012,5,3;
+	skill 232,5,3;
+	skill 800,1,3;
+	skill 722,1,3;
+	skill 723,1,3;
+	skill 724,1,3;
+	skill 981,1,3;
+	skill 726,1,3;
+	skill 982,1,3;
+	skill 728,1,3;
+	skill 729,1,3;
+	skill 730,1,3;
+	skill 731,1,3;
+	skill 732,1,3;
+	skill 733,1,3;
+	skill 734,1,3;
+	skill 735,1,3;
+	skill 736,1,3;
+	skill 737,1,3;
+	skill 738,1,3;
+	skill 739,1,3;
+	skill 740,1,3;
+	skill 741,1,3;
+	skill 742,1,3;
+	skill 743,1,3;
+	skill 744,1,3;
+	skill 745,1,3;
+	skill 746,1,3;
+	skill 747,1,3;
+	skill 748,1,3;
+	skill 970,1,3;
+	skill 971,1,3;
+	skill 972,1,3;
+	skill 973,1,3;
+	skill 974,1,3;
+	skill 975,1,3;
+	skill 976,1,3;
+	skill 977,1,3;
+	skill 978,1,3;
+	skill 979,1,3;
+	skill 980,1,3;
+	skill 999,1,3;
+	skill 771,1,3;
+	skill 749,1,3;
+	skill 801,1,3;
+	skill 171,1,3;
+	skill 30,10,3;
+	skill 83,10,3;
+	skill 510,1,3;
+	skill 515,10,3;
+	skill 764,1,3;
+	skill 963,1,3;
+	skill 230,5,3;
+	skill 264,1,3;
+	skill 272,5,3;
+	skill 273,5,3;
+	skill 541,5,3;               //nagashi esta com pane em sua area de dano
+	skill 538,10,3;
+	skill 89,10,3;
+	skill 426,5,3;
+	skill 263,10,3;              // hyugas devem ter para que o combo funcione.
+	skill 371,5,3;
+	skill 372,10,3;
+	skill 401,1,3;              //ativar o Byakugan (removida a coleta de esferas no 8, 16 e 32 rits.)
+	skill 266,5,3;
+	skill 534,10,3;
+	skill 543,5,3;				//aura ninja com pane do capturar bijuu
+	skill 659,5,3;	
+	skill 184,10,3;
+	skill 185,10,3;
+	skill 51,10,3;
+	skill 62,10,3;
+	skill 506,1,3;
+	skill 321,10,3;
+    end;
+}

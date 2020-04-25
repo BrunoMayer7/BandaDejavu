@@ -1,0 +1,10 @@
+kakashi,0,0	monster	Bikouchuu	1051,40,5000
+kakashi,0,0	monster	Girino	1768,40,5000
+kakashi,0,0	monster	Jya	1774,40,5000
+kakashi,0,0	monster	Onnba	1792,40,5000
+kakashi,0,0	monster	Akino	1778,40,5000
+kakashi,0,0	monster	Filhote de Katsuyo	1776,40,5000
+
+
+
+

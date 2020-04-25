@@ -1,0 +1,113 @@
+// Forbidden Skills Database
+//
+// Structure of Database:
+// SkillID,Flag
+//
+// Legend for 'Flag' field (bitmask):
+//  1 = Cannot be used in normal maps
+//  2 = Cannot be used in PvP maps (use this instead of 1 for PK-mode servers)
+//  4 = Cannot be used in GvG maps
+//  8 = Cannot be used when WoE is on
+//  16 = Cannot be cloned (clones will not copy this skill)
+//  Restricted zones - they're configured by 'restricted <number>' mapflag
+//  32 = Cannot be used in zone 1 maps
+//  64 = Cannot be used in zone 2 maps
+//  128 = Cannot be used in zone 3 maps
+//  256 = Cannot be used in zone 4 maps
+//  512 = Cannot be used in zone 5 maps
+//  1024 = Cannot be used in zone 6 maps
+//  2048 = Cannot be used in zone 7 maps
+
+//
+// Example:
+// 8,6 = Endure cannot be used in PvP and GvG maps (2+4)
+
+//GVG
+26,4	//AL_TELEPORT
+27,4	//AL_WARP
+87,4	//WZ_ICEWALL
+150,4	//TF_BACKSLIDING
+//361,4	//HP_ASSUMPTIO
+362,4	//HP_BASILICA
+395,4	//CG_MOONLIT
+411,4	//CG_MOONLIT
+//426,4	//CG_MOONLIT
+491,4	//CR_CULTIVATION
+491,4	//CR_CULTIVATION
+58,4	//CR_CULTIVATION
+
+//mixed
+488,3	//CG_HERMODE
+
+//Clone Forbidden/pointless skills
+77,16	//PR_TURNUNDEAD
+79,16	//PR_MAGNUS
+54,1	//PR_MAGNUS
+
+//Zone 1 - Aldebaran Turbo Track
+321,32
+54,32
+426,32
+18,32
+173,32
+1010,32
+
+//Zone 2 - Jail
+421,64	//TK_JUMPKICK#Flying Side Kick#
+426,64	//TK_HIGHJUMP#Taekwon Jump#
+
+//Zone 4 - WoE:SE 
+264,256 //Snap
+426,256 //High Jump
+758,256 //High Jump
+10013,256
+27,256
+26,256
+
+//996,128 //High Jump
+
+//758,128 //High Jump
+10013,128
+321,128
+27,128
+999,128
+758,128
+
+999,512 //High Jump
+758,512 //High Jump
+10013,512
+//288,512
+990,512
+27,512
+26,512
+426,512
+
+18,1024
+362,1024
+26,1024
+27,1024
+758,1024 //recall
+10013,1024 //recall de guild
+264,1024
+219,1024
+426,1024
+389,1024
+529,1024
+304,1024
+150,1024
+1010,1024
+
+18,2048 //High Jump
+758,2048 //High Jump
+10013,2048
+264,2048
+219,2048
+26,2048
+27,2048
+426,2048
+389,2048
+529,2048
+304,2048
+150,2048
+1010,2048
+173,2048

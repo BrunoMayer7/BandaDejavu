@@ -1,0 +1,16 @@
+-	script	NR_SHINRATENSEI	-1,{
+
+	changelook LOOK_HEAD_TOP, 2934;
+	specialeffect2 EF_ENERGYCOAT;
+	sc_start SC_ENERGYCOAT, 15000, 10;	
+	attachnpctimer;
+	initnpctimer;
+	end;
+	OnTimer15000:
+	changelook LOOK_HEAD_TOP, 0;
+	end;
+		
+	
+}
+
+// Susanoo tem redução no dano fisico e mágico com base no SP do usuário.

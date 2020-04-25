@@ -1,0 +1,22 @@
+//===== rAthena Script =======================================
+//= konoha3 Warp Script
+//===== By: ==================================================
+//= Athena (1.0)
+//= Nana (1.2)
+//===== Current Version: =====================================
+//= 1.5
+//===== Compatible With: =====================================
+//= rAthena Project
+//===== Description: =========================================
+//= Warp Points for konoha3
+//===== Additional Comments: =================================
+//= 1.3 prt19 warp fix [shadow]
+//= 1.4 Added warps for the sign quest [MasterOfMuppets]
+//= 1.5 Corrected NPC names to fall within proper restrictions. [L0ne_W0lf]
+//= 1.6 Renewal script update for ep16.1 [Capuche]
+//============================================================
+
+//= konoha3 City ============================================
+konoha3,208,52,0	warp	portaokonoha	1,1,prt_fild02,173,375
+konoha3,88,233,0	warp	portaohospital	1,1,hospital,104,8
+konoha3,181,194,0	warp	entradabiblioteca	1,1,bibli_01,52,37

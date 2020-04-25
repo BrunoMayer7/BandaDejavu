@@ -1,0 +1,36 @@
+//===== Cronus Script ======================================== 
+//= Curandeira
+//===== Por: =================================================
+//= DennyLoko
+//===== Versão Atual: ======================================== 
+//= 1.3
+//===== Descrição: =========================================== 
+//= Recupera HP e SP gratuitamente
+//= Usado as cordenadas do NPC do eAthena
+//===== Changelog: =========================================== 
+//= 1.0 Iniciado o Npc [DennyLoko]
+//= 1.1 Organizado o NPc [Kamper]
+//= 1.1b corrigindo erro na duplicate de rachel [Tiu Skan]
+//= - Removidos ".gat" 
+//= Script Reestruturado [Mehah]
+//= 1.2 Removido falas, adicionado cura de Homunculo e Moscóvia. [RoM]
+//= 1.3 Adicionado a opção paga. [RoM]
+//============================================================
+
+acad_01,87,28,5	script	Atendente	434,{
+
+//========================================================================
+//   MENU
+//========================================================================
+mes "Olá ^0080C0"+strcharinfo(0)+"^000000 !";
+mes "Bem-vindo a academia Shinobi, aqui você vai aprender os jutsus que todos os shinobis precisam saber antes de se tornarem um Genin.";
+next;
+mes "Segue a lista dos Jutsus que você vai aprender:";
+menu "Kage bunshin no Jutsu",L_KB,
+     "Kawarimi no Jutsu",L_Kawa,
+     "Henge no Jutsu",L_Henge,
+     "Arremeso de Kunai",L_Kunai,
+     "Arremeso de Shuriken",L_Shuri;
+
+
+}

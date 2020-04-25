@@ -1,0 +1,42 @@
+konoha3,218,77,1	script	1_f_02	67,{	
+
+	mes "[^DC143CTeleportador Vila^000000]";
+	mes "Olá amigo, estou aqui para facilitar sua vida, e posso te teleportar para os principais locais do Mundo Shinob";
+	next;
+	mes "[^DC143CTeleportador Vila^000000]";
+	mes "Escolhe um lugar para se teleportar";
+	next;
+	menu "- Mamutes de Konoha",MamuteKonoha,"- Mamutes da Suna",MamuteSuna,"- Mamutes da Nuvem",MamuteNuvem,"- Mamutes da Nevoa",MamuteNevoa,"- Ilha da Tartaruga",Tartaruga,"- Cla Kamizuru",Kamizuru,"- Nenhum",nao;
+	
+	MamuteKonoha:
+	warp "mjolnir_08", 0,0;
+	end;
+
+	MamuteSuna:
+	warp "ra_fild04", 0,0;
+	end;
+
+	MamuteNuvem:
+	warp "ein_fild01", 0,0;
+	end;
+
+	MamuteNevoa:
+	warp "pay_fild07", 0,0;
+	end;
+
+	Tartaruga:
+	warp "tur_dun01", 160,35;
+	end;
+	
+	Kamizuru:
+	warp "pay_dun02", 0,0;
+	end;
+
+	nao:
+	close;
+
+OnInit:
+waitingroom "[Teleportador]",0;
+
+
+}

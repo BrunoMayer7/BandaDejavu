@@ -1,0 +1,250 @@
+// Item Produce Database
+//
+// Structure of Database:
+// ProduceItemID,ItemLV,RequireSkill,RequireSkillLv,MaterialID1,MaterialAmount1,......
+//
+// Comments:
+// If MaterialAmount = 0, then you just need that item in your inventory (guides)
+// For example, Mine Bottle is 7138,32,228,7131,0,713,1,1050,1,1051,1
+// 7131 is the Guide needed to create mine bottles and the amount needed of this item is 0 (.. ,7131,0, ..).
+
+
+//===== Weapon === ItemLV=1~3 ==================
+
+//---- Armas -----------------------
+//-- Arma básica <-- 1x Ametista Especial,10x Ferro,1x Martelo
+1101,1,99,1,13871,1,7231,10,1005,1
+//-- Arma básica [Nível: 10] <-- 3x Ametista Especial,2x Esmeralda Especial,25x Ferro,1x Martelo
+//1104,2,99,1,13871,3,13872,2,7231,25,1005,1
+//-- Arma básica [Nível: 20] <-- 1x Pérola,5x Esmeralda Especial,2x Ametista Especial,1x Martelo,10x Ferro
+1107,3,99,1,13873,1,13872,5,13871,2,7231,10,1005,1
+//-- Arma intermediária [Nível: 30] <-- 3x Pérola,7x Ametista Especial ,1x Martelo,5x Rubi,35x Ferro
+1110,4,99,2,13873,3,13871,7,13874,5,1005,1,7231,35
+//-- Arma intermediária [Nível: 40] <-- 25x Ferro,10x Ametista Especial,7x Esmeralda Especial,3x Peridoto,1x Martelo
+1113,5,99,2,7231,25,13871,10,13872,7,13875,3,1005,1
+//-- Arma intermediária [Nível: 50] <-- 15x Ferro,5x Peridoto,5x Safira,5x Rubi,2x Martelo
+1122,2,99,2,7231,15,13875,5,13876,5,13874,5,1005,2
+//-- Arma Avançada [Nível: 60] <-- 50x Ferro,10x Safira,10x Opala Especial,10x Peridoto,1x Martelo,5x Tronco
+1126,3,99,3,7231,50,13876,10,13877,10,13875,10,1005,1,13712,5
+//-- Arma Avançada [Nível: 70] <-- 50x Ferro,15x Opala Especial,1x Martelo,10x Tronco,5x Zircônio,3x Peridoto,2x Safira
+1123,3,99,3,7231,50,13877,15,1005,1,13712,13878,5,13875,3,13876,2
+//-- Arma Avançada [Nível: 80] <-- 10x Ferro,1x Diamante de 2 Quilates,,5x Zircônio,5x Peridoto,,5x Safira,1x Martelo,2x Tronco,5x Opala Especial
+1119,3,99,3,7231,10,13879,1,13878,5,13875,5,13876,5,1005,1,13712,2,13877,5
+//-- Arma Lendária [Nível: 90] <-- 50x Ferro,10x Diamante de 2 Quilates,10x Diamante de 3 Quilates,10x Safira,10x Rubi,10x Esmeralda Especial,10x Zircônio,25x Tronco,5x Martelo
+1129,3,99,3,7231,50,13879,10,13880,10,13876,10,13874,10,13872,10,13878,10,13712,25,1005,5
+//----------------------------------------------
+
+//---- Sapatos ---------------------------------
+//-- Sapato Iniciante [Nível: Qualquer],1x Ametista especial,5x Ferro,1x Martelo,
+1201,1,98,1,13871,1,7231,5,1005,1
+//-- Sapato Iniciante [Nível: 10], 2x Ametista Especial,3x Esmeralda Especial,10x Ferro,1x Martelo
+1204,1,98,1,13871,2,13872,3,7231,10,1005,1
+//-- Sapato Iniciante [Nível: 20], 1x Pérola,1x Ametista Especial,1x Esmeralda Especial,20x Ferro,2x Martelo
+1207,1,98,1,13873,1,13871,1,13872,17231,20,1005,2
+//-- Sapato Intermediário [Nível: 30], 1x Rubi,1x Tora,15x Ferro,1x Martelo,2x Esmeralda Especial
+1210,2,98,2,13874,1,7222,1,7231,15,1005,1,13872,2
+//-- Sapato Intermediário [Nível: 40], 2x Tora,20x Ferro,1x Martelo,5x Peridoto,1x Pérola
+1213,2,98,2,7222,2,7231,20,1005,1,13875,5,13873,1
+//-- Sapato Intermediário [Nível: 50], 5x Tora,25x Ferro,2x Martelo,5x Pérola,5x Rubi,1x Safira
+1216,2,98,2,7222,5,7231,25,1005,2,13873,5,13874,5,13876,1
+//-- Sapato Avançado [Nível: 60], 5x Tronco,10x Ferro,1x Sáfira,1x Rubi,1x Peridoto,1x Pérola,5x Opala Especial,3x Martelo
+1219,3,98,3,13712,7231,10,13876,1,13874,1,13875,1,13873,1,13877,5,1005,3
+//-- Sapato Avançado [Nível: 70], 30x Ferro,10x Tronco,5x Opala Especial,1x Martelo,3x Zircônio,1x Safira,1x Pérola,1x Rubi
+1222,3,98,3,7231,30,13712,10,13877,5,1005,1,13878,3,13876,1,13873,1,13874,1
+//-- Sapato Avançado [Nível: 80], 50x Ferro,25x Tronco,1x Martelo,5x Safira,5x Pérola,5x Rubi,5x Peridoto,1x Diamante de 2 Quilates
+1222,3,98,3,7231,50,13712,25,1005,1,13876,5,13873,5,13874,5,13875,5,13879,1
+//-- Sapato Lendário [Nível: 90], 50x Ferro,10x Diamante de 2 Quilates,10x Diamante de 3 Quilates,10x Zircônio,10x Ametista Especial,10x Opala Especial,10x Pérola,25x Tronco,5x Martelo
+1222,3,98,3,7231,50,13879,10,13880,10,13878,10,13871,10,13877,10,13873,10,13712,25,1005,5
+
+//----------------------------------------------
+
+//---- Two Handed Swords -----------------------
+//-- Katana <-- BS_TWOHANDSWORD & 35 Iron, 15 Horrendous Mouth
+1116,1,100,1,998,35,958,15
+//-- Slayer <-- BS_TWOHANDSWORD & 25 Steel, 20 Decayed Nail
+1151,2,100,2,999,25,957,20
+//-- Bastard Sword <-- BS_TWOHANDSWORD & 45 Steel
+1154,2,100,2,999,45
+//-- Two-Handed Sword <-- BS_TWOHANDSWORD & 12 Oridecon, 10 Steel
+1157,3,100,3,984,12,999,10
+//-- Broad Sword <-- BS_TWOHANDSWORD & 12 Oridecon, 20 Steel
+1160,3,100,3,984,12,999,20
+//-- Claymore <-- BS_TWOHANDSWORD & 16 Oridecon, 20 Steel, 1 Cracked Diamond
+1163,3,100,3,984,16,999,20,733,1
+//----------------------------------------------
+
+//---- Axes ------------------------------------
+//-- Axe <-- BS_AXE & 10 Iron
+1301,1,101,1,998,10
+//-- Battle Axe <-- BS_AXE & 110 Iron
+1351,1,101,1,998,110
+//-- Hammer <-- BS_AXE & 30 Steel
+1354,2,101,2,999,30
+//-- Buster <-- BS_AXE & 4 Oridecon, 20 Steel, 30 Orcish Fang
+1357,3,101,3,984,4,999,20,922,30
+//-- Two-Handed Axe <-- BS_AXE & 8 Oridecon, 10 Steel, 1 Amthyst
+1360,3,101,3,984,8,999,10,719,1
+//----------------------------------------------
+
+//---- Maces -----------------------------------
+//-- Club <-- BS_MACE & 3 Iron
+1501,1,102,1,998,3
+//-- Mace <-- BS_MACE & 30 Iron
+1504,1,102,1,998,30
+//-- Smasher <-- BS_MACE & 20 Steel
+1507,2,102,2,999,20
+//-- Flail <-- BS_MACE & 33 Steel
+1510,2,102,2,999,33
+//-- Chain <-- BS_MACE & 45 Steel
+1519,2,102,2,999,45
+//-- Morning Star <-- BS_MACE & 85 Steel, 1 1 Carat Diamond
+1513,3,102,3,999,85,730,1
+//-- Sword Mace <-- BS_MACE & 100 Steel, 20 Sharp Scale
+1516,3,102,3,999,100,963,20
+//-- Stunner <-- BS_MACE & 120 Steel, 1 Heroic Emblem
+1522,3,102,3,999,120,968,1
+//----------------------------------------------
+
+//---- Knucklebracers --------------------------
+//-- Waghnakh <-- BS_KNUCKLE & 160 Iron, 1 Pearl
+1801,1,103,1,998,160,722,1
+//-- Knuckle Duster <-- BS_KNUCKLE & 50 Steel
+1803,2,103,2,999,50
+//-- Hora <-- BS_KNUCKLE & 65 Steel
+1805,2,103,2,999,65
+//-- Fist <-- BS_KNUCKLE & 4 Oridecon, 10 Ruby
+1807,3,103,3,984,4,723,10
+//-- Claw <-- BS_KNUCKLE & 8 Oridecon, 10 Topaz
+1809,3,103,3,984,8,728,10
+//-- Finger <-- BS_KNUCKLE & 4 Oridecon, 10 Opal
+1811,3,103,3,984,4,727,10
+//----------------------------------------------
+
+//---- Spears ----------------------------------
+//-- Javelin <-- BS_SPEAR & 3 Iron
+1401,1,104,1,998,3
+//-- Spear <-- BS_SPEAR & 35 Iron
+1404,1,104,1,998,35
+//-- Pike <-- BS_SPEAR & 70 Iron
+1407,1,104,1,998,70
+//-- Guisarme <-- BS_SPEAR & 25 Steel
+1451,2,104,2,999,25
+//-- Glaive <-- BS_SPEAR & 40 Steel
+1454,2,104,2,999,40
+//-- Partizan <-- BS_SPEAR & 55 Steel
+1457,2,104,2,999,55
+//-- Trident <-- BS_SPEAR & 8 Oridecon, 10 Steel, 5 Aquamarine
+1460,3,104,3,984,8,999,10,720,5
+//-- Halberd <-- BS_SPEAR & 12 Oridecon, 10 Steel
+1463,3,104,3,984,12,999,10
+//-- Lance <-- BS_SPEAR & 12 Oridecon, 3 Ruby, 2 Evil Horn
+1410,3,104,3,984,12,723,3,923,2
+//----------------------------------------------
+
+//==============================================
+
+
+//==============================================
+// COOKING RECIPES (LV= 11 -> 20)
+//==============================================
+
+//--------------------LEVEL 1-----------
+
+//-- Pernas de Gafanhoto frita [12014],5x Perna de Gafanhoto [940],1x Oléo de Cozinha [7457],1x Frigideira Velha [7031]
+12041,11,0,0,940,5,7457,1,7031,1
+
+//-- Palmípede Temperado,10x  Erva Amarela [508],10x  Erva Verde [511],20x  Pata Pegajosa [918],1x  Molho Saboroso [7454]
+12042,11,0,0,508,10,511,10,918,20,7454,1
+
+//-- Bife Bombástico,10x  Erva Verde [511],5x  Carne [517],1x  Frigideira Velha [7031],5x  Pimenta Vermelha [7286],1x  Molho Picante [7455]
+12043,11,0,0,511,10,517,5,7031,1,7286,5,7544,1
+
+//-- Bife Marinado com Ervas,5x  Erva Vermelha [507],2x  Erva Amarela [508],5x  Erva Verde [511],5x  Carne [517],1x  Limão [568],1x  Molho Doce [7453]
+12044,11,0,0,507,5,508,2,511,5,517,5,568,1,7453,1
+
+
+//-- Chá de Ervas com Uvas,5x  Uvas [514],2x  Poção Vermelha [501]
+693,11,0,0,514,5,501,2
+
+//-- Chá Vermelho de Outono,10x  Erva Vermelha [507],10x  Erva Amarela [508], 5x   Erva Azul [510]
+694,12,0,0,507,10,508,10,510,5
+
+//-- Chá de Ervas e Mel,10x  Erva Branca [509],2x  Mel [518],1x  Condimento Amarelo [7452]
+695,13,0,0,509,10,518,2,7452,1
+
+//-- Vinho de Mastela,1,1x  Poção Azul [505],4x  Mastela [522],2x  Limão [568],2x  Álcool [970],1x  Condimento Amarelo [7452]
+696,14,0,0,505,1,522,4,568,2,970,2,7452,1
+
+//-- Garras de Caranguejo no Vapor,1x  Molho Saboroso [7454],10x  Erva Verde [511] ,10x  Garra de Crustáceo [960]
+12047,12,0,0,7454,1,511,10,960,10
+
+//-- Frutos do Mar Sortidos,1x  Peixe [579],5x  Nadadeira [951],5x  Peixe Gigante [580],10x  Carne de Ostra [966]
+12048,13,0,0,579,1,951,5,580,5,966,10
+
+//-- Sopa de Ostra,1x  Mel [518],10x  Concha [961],20x  Carne de Ostra [966],1x  Molho Doce [7453]
+12049,14,0,0,518,1,961,10,966,20,7453,1
+
+//-- Água-Viva Temperada,10x  Erva Branca [509],30x  Tentáculo [962],1x  Frigideira Velha [7031],10x  Erva Verde [511] 
+12050,15,0,0,509,10,962,30,7031,1,511,10
+
+//-- Marracão Liso,5x  Cenoura [515],1x  Sacola de Grãos [7577],1x  Panela [7482],1x  Molho Saboroso [7454]
+12051,15,0,0,515,5,7577,1,7482,1,7454,1
+
+//-- Queijo Gratinado com Tentáculos,10x  Queijo [548],5x  Batata Doce Assada [549],10x  Tentáculo [962],1x  Molho Doce [7453]
+12052,16,0,0,548,10,549,5,962,10,7453,1
+
+//-- Macarrão Frio,10x  Cenoura [515],3x   Sacola de Grãos [7577],1x   Panela [7482],10x  Cubo de Gelo [7066],1x   Molho Picante [7455]
+12052,16,0,0,515,10,7577,3,7482,1,7066,10,7455,1
+
+//-- Asa de Morcego com Abóbora no Vapor,10x  Erva Vermelha [507],10x  Folha de Hinalle [520],20x  Abóbora [535] ,20x  Asa de Morcego Vermelho [7006],1x   Panela [7482]
+12052,16,0,0,507,10,520,10,535,20,7006,20,7482,1
+
+//-- Suco de Uva e Mel,2x  Poção Vermelha,5x  Uvas [514],1x  Mel [518] ARRUMAR
+12052,16,0,0,514,5,520,10,535,20,7006,20,7482,1
+
+//-- Bolo-mousse de Chocolate,1x  Leite [519],1x  Pedaço de Bolo [539],2x  Prato de Porcelana [736],10x  Cacau [7182]
+12052,16,0,0,519,1,539,1,736,2,7182,10
+
+//-- Salada de Frutas,5x  Maçã Verde [619],5x  Banana [516],5x  Uvas [514],5x  Mel [518],1x  Condimento Amarelo [7452]
+12052,16,0,0,619,5,516,5,514,5,518,5,7452,1
+
+//-- Sanduíche Cremoso,10x  Erva Amarela [508],1x   Carne [517],15x  Leite [519],10x  Queijo [548],1x   Molho Doce [7453]
+12052,16,0,0,508,10,517,1,519,15,548,10,7453,1
+
+//-- Caudas de Macaco Fritas,5x  Cauda de Yoyo [942],1x Oléo de Cozinha [7457],1x Frigideira Velha [7031]
+12052,16,0,0,942,5,7457,1,7031,1
+
+//-- Gratinado de Chilli e Camarão,20x  Pimenta Vermelha [7286],20x  Camarão [567],1x  Molho Doce [7453],20x  Limão [568]
+12052,16,0,0,7286,20,567,20,7453,1,568,20
+
+//-- Batata-doce Frita,10x  Batata Doce [7330],10x  Batata Doce Assada [549],1x  Batata Assada [633],1x  Molho Doce [7453] 
+12052,16,0,0,7330,10,549,10,633,1,7453,1
+
+//-- Lábios Fossilizados no Vapor,10x  Erva Branca [509],5x   Peixe [579],10x  Lábios Fossilizados [1054],2x   Molho Doce [7453]
+12052,16,0,0,509,10,579,5,1054,10,7453,2
+
+
+
+
+
+//-- poção branca <-- AM_PHARMACY & Potion Creation Guide & 1 Red Herb, 1 Empty Potion Bottle
+12071,22,228,1,7144,0,621,1,7147,1
+//-- poção azul <-- AM_PHARMACY & Potion Creation Guide & 1 Yellow Herb, 1 Empty Potion Bottle
+12072,22,228,1,7144,0,621,2,7147,1,1042,2
+//-- poção verde <-- AM_PHARMACY & Potion Creation Guide & 1 White Herb, 1 Empty Potion Bottle
+12073,22,228,1,7144,0,621,4,7147,1,7005,1
+//-- poção vermelha <-- AM_PHARMACY & Potion Creation Guide & 1 Blue Herb, 1 Scell, 1 Empty Potion Bottle
+12074,22,228,1,7144,0,621,10,901,10,7147,1
+//-- Anti-envenenamento <-- AM_PHARMACY & Condensed Potion Creation Guide & 1 Red Potion, 1 Empty Testtube, 1 Cactus Needle
+12075,22,228,1,7127,0,621,4,7147,1,972,2
+//-- Anti-cegueira <-- AM_PHARMACY & Condensed Potion Creation Guide & 1 Yellow Potion, 1 Empty Testtube, 1 Mole Whiskers
+12076,22,228,1,7127,0,621,4,7147,1,970,2
+//-- Anti-alucinação <-- AM_PHARMACY & Condensed Potion Creation Guide & 1 White Potion, 1 Empty Testtube, 1 Witched Starsand
+12077,22,228,1,7127,0,621,4,7147,1,973,2
+//-- Anti-silêncio <-- AM_PHARMACY & Condensed Potion Creation Guide & 1 White Potion, 1 Empty Testtube, 1 Witched Starsand
+12078,22,228,1,7127,0,621,4,7147,1,971,2
+//-- Pílula da saúde <-- AM_PHARMACY & Condensed Potion Creation Guide & 1 White Potion, 1 Empty Testtube, 1 Witched Starsand
+12079,22,228,1,7128,0,621,8,7147,1,971,2,970,2,973,2,972,2,917,2
+//-- Super pílula da sáude <-- AM_PHARMACY & Condensed Potion Creation Guide & 1 White Potion, 1 Empty Testtube, 1 Witched Starsand
+12080,22,228,1,7129,0,621,25,7147,1,12079,1,12074,1
+//---------------------------------------------

@@ -1,0 +1,15 @@
+-	script	8portao	-1,{
+
+	changelook LOOK_HEAD_TOP, 2927;
+	specialeffect2 EF_ENERGYCOAT;
+	sc_start SC_WALKSPEED, 20000, 1000;	
+	sc_start SC_OVERTHRUST, 20000, 100;
+	attachnpctimer;
+	initnpctimer;
+	end;
+	OnTimer15000:
+	changelook LOOK_HEAD_TOP, 0;
+	end;
+		
+	
+}
