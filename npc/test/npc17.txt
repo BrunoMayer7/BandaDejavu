@@ -15,7 +15,7 @@ kakashi,67,88,5	script	kakashi	831,{
 	skill 17,10,3;
 	skill 20,10,3;
 	skill 21,10,3; //não está levando a dex em consideração. arrumar
-	skill 27,4,3; // portal esta pedindo uma gema azul que deve ser retirada.
+	skill 27,4,3; // portal esta pedindo uma gema azul que deve ser retirada xxxxx
 	skill 28,10,3;
 	skill 29,10,3;
 	skill 541,6,3;
