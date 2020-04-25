@@ -1,5 +1,0 @@
-kakashi,67,88,5	script	kakashi	831,{
-
-    skill 2216,5,3;
-    end;
-}

@@ -1,8 +1,0 @@
-
-
-x_lhz,117,95,5	script	Kakashi	19855,{
-	
-	
-	mes	"Chupa Minha  Rola";
-	end;
-}
